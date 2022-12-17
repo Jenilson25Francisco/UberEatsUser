@@ -1,13 +1,17 @@
 
-import { View, Text, Image, FlatList, StyleSheet } from 'react-native'
+import { View, Image, FlatList, StyleSheet, Text } from 'react-native';
+import restaurants from '../../../assets/data/restaurants.json';
+
+const restaurant = restaurants[0];
+("");
 
 const RestaurantDetailsPage = () => {
 
     return (
 
-        <View>
-
-            <Text>Details</Text>
+        <View style={styles.page}> 
+            <Image source={{ uri: restaurant.image }} style={styles.image} />
+            <Text style={styles.title}>{restaurant.name}</Text>
 
         </View>
 
