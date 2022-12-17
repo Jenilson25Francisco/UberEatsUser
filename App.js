@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
-import RestaurantDetails from './src/screens/RestaurantDetails';
+import RestaurantDetailsPage from './src/screens/RestaurantDetails';
 
 export default function App() {
   return (
     <View style={styles.container}>
 
-     {/* <HomeScreen />*/}
-      {<RestaurantDetails />}
+      <RestaurantDetailsPage />
+     
 
       <StatusBar style="auto" />
     </View>
